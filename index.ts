@@ -27,6 +27,6 @@ app.get('/triangle', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'public', 'views', 'triangle.html'))
 })
 
-app.listen("3333", () => {
-  console.log("listen at 3333")
+app.listen("6661", () => {
+  console.log("listen at 6661")
 })
