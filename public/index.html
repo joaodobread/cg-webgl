@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>WebGL</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -39,13 +39,72 @@
     <li class="nav-item">
       <a class="nav-link" href="#tutorial" tabindex="-1" aria-disabled="true">Tutorial</a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#links" tabindex="-1" aria-disabled="true">Links</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#creators" tabindex="-1" aria-disabled="true">Autores</a>
+    </li>
   </ul>
 
   <div class="container mt-5">
     <section id="tutorial">
-      Para utilizar do WebGL no navegador você não precisa de nada além do navegador. O WebGL já vem dentro do contexto
-      do
-      canvas, se o seu navegador suportar o HTML:5 então provavelmente terá suporte para o WebGL
+      <h2>WebGL</h2>
+      <p>
+        Para utilizar do WebGL no navegador você não precisa de nada além do navegador. O WebGL já vem dentro do
+        contexto
+        do
+        canvas, se o seu navegador suportar o HTML:5 então provavelmente terá suporte para o WebGL
+      </p>
+
+      <h2>Rodando Local</h2>
+      <p>
+        No repositório do projeto existe um mini webserver pensado para deixar a aplicação para testes.
+      </p>
+      <p>
+        Para rodar o projeto localmente você precisará de instalar algumas ferramentas.
+      <ul>
+        <li>
+          <a href="https://nodejs.org/en/">NodeJS</a>
+        </li>
+        <li>
+          <a href="https://www.npmjs.com/get-npm">NpmJs</a>
+          ou
+          <a href="https://yarnpkg.com/">Yarn</a>
+        </li>
+        <li>
+          Editor de Texto/Código
+          <ul>
+            <li>
+              <a href="https://code.visualstudio.com/">Visual Studio</a>
+            </li>
+            <li>
+              <a href="https://www.vim.org/">VIM</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://git-scm.com/">git</a>
+        </li>
+      </ul>
+      </p>
+      <div>
+        <p>
+          Com as dependências instaladas você só precisa clonar o repositório do git:
+        </p>
+        <code>git clone https://github.com/joaodobread/webgl-examples.git </code>
+      </div>
+      <div>
+        <code>cd webgl-examples/</code>
+      </div>
+      <div>
+        <code>npm install</code> ou <code>yarn install</code>
+      </div>
+      <div>
+        <code>npm run build</code> ou <code>yarn build</code>
+      </div>
+      <div><code>npm run serve:dev</code> ou <code>yarn serve:dev</code></div>
+
     </section>
   </div>
   <section>
@@ -83,6 +142,31 @@
       não tem tamanhos tão diferentes, mas a diferença mais clara é que o canvas faz um loop sobre os vértices
       fornecidos, já o WebGL faz o mesmo, só que a matemática fornecida está em GLSL e é diretamente executada pela GPU;
     </section>
+
+    <br>
+
+    <h1 id="links">Links</h1>
+    <ul>
+      <li>
+        <a href="https://github.com/joaodobread/webgl-examples">Repositório Github</a>
+      </li>
+      <li>
+        <a href="http://18.228.224.145/">Site (current)</a>
+      </li>
+      <li>
+        <a href="https://webglfundamentals.org">WebGL Fundamental</a>
+      </li>
+    </ul>
+
+    <h1>Autores</h1>
+    <ul id="creators">
+      <li>
+        <a href="https://github.com/joaodobread">João Victor</a>
+      </li>
+      <li>
+        <a href="https://github.com/tugzera">Bruno Damasceno</a>
+      </li>
+    </ul>
 
   </div>
   <a href="/triangle">Triangle</a>
